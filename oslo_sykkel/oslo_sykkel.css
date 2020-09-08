@@ -27,7 +27,7 @@ h1 {
     padding: 10px;
 }
 
-.main-station {
+.station {
     background: whitesmoke;
     width: 930px;
     height: 230px;
@@ -36,7 +36,7 @@ h1 {
     padding: 2px;
 }
 
-.main-station-id {
+.address {
     background: #4b1e3d;
     width: 900px;
     height: 40px;
