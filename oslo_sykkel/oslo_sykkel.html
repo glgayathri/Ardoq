@@ -3,19 +3,26 @@
 #4b1e3d - dark -->
 <!DOCTYPE html>
 <head>
-    <!-- <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="true"> -->
     <title>Oslo Sykkel Application</title>
-    <!-- <link rel="stylesheet" href="oslo_sykkel.css"> -->
     <link rel="stylesheet" href="oslo_sykkel_cards.css">
 </head>
 <body>
-    <header class="header">
-        <h1>Find Your Bike</h1>
-    </header>
-        <div class="station">           
-        </div>
+
+<header class="header">
+    <h1>🚲 Find Your Bike 🚲</h1>
+</header>
+
+<form id="searchForm" action="javascript:search();">
+    <div class="input-group">
+        <button id="go" class="btn btn-default" type="button"
+            onclick="document.getElementById('searchForm').submit(); return false;">Search
+        </button>
+        <input type="text" id="searchItem" class="form-control" placeholder="search by your station name">
+    </div>
+</form>
+
+<div class="station">
+</div>
     
     <script src="oslo_sykkel.js"></script>
 </body>

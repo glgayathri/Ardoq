@@ -1,70 +1,68 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 body {
     background: url(pattern.png);
 }
 
-header {
-    margin: 0 auto;
-    align-content: center;
+header{
+    background: #ec8fd0;
+    padding: 10px;
 }
 
-h1 {
+header > h1 {
     align-content: center;
     color: #4b1e3d;
-    align-content: center;
-}
-
-.station
-.address
-.total
-.booked
-.free {
-    display: block;
-    float: left;
+    text-align: center;
 }
 
 .station {
-    background: #ec8fd052;
-    width: 80%;
-    height: 100%;
-    margin: auto;
-    position: relative;
-    padding: 10px;
+    display: grid;
+    grid-gap: 15px; 
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    grid-auto-flow: dense;
+    
+}
+.stationName {
+  width: 450px;
+  height: 180px;
+  /* background-color: #ec8fd0; */
+  background: linear-gradient(#ec8fd0ab,#b82e8aa8);
+  border-radius: 6px;
+  padding: 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  margin: 1.5rem;
+  text-align: center;
+  color:  #4b1e3d; 
+  font-weight: bold; 
 }
 
 .address {
     background: #4b1e3d;
-    width: 350px;
-    height: 50px;
     margin: auto;
+    margin-top: 5px;
     position: relative;
-    padding: 15px;
+    padding: 10px;
+    color: whitesmoke;
     font-weight: bold;
-    text-align: center; 
-    color: wheat;
+    text-align: center;
 }
 
 .total {
     background: #b82e8a;
-    width: 350px;
-    height: 50px;
     margin: auto;
+    /* margin-top: 15px; */
     position: relative;
     padding: 10px;
     font-weight: normal;
-    text-align: center;    
+    text-align: center; 
+    color: whitesmoke;   
 }
 
 .free {
     background: #cccc00;
-    width: 350px;
-    height: 50px;
     margin: auto;
+    /* margin-top: 10px; */
     position: relative;
     padding: 10px;    
     font-weight: normal;
@@ -74,9 +72,8 @@ h1 {
 
 .booked {
     background: #ccc;
-    width: 350px;
-    height: 50px;
     margin: auto;
+    /* margin-top: 10px; */
     position: relative;
     padding: 10px;    
     font-weight: normal;
@@ -93,4 +90,26 @@ h1 {
 }
 #booked-no{
     font-style: italic;
+}
+
+#searchForm {
+    color: #4b1e3d;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.btn-default {
+    background-color: #b82e8a;
+    color: whitesmoke;
+    width: 75px;
+    height: 25px;
+    text-align: center;
+    margin-top: 15px; 
+    font-weight: bold;
+}
+
+.form-control {
+    width: 230px;
+    border:  solid #ec8fd0 ;
+    text-align: center;
 }
