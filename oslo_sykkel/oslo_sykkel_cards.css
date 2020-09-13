@@ -16,45 +16,44 @@ header {
 h1 {
     align-content: center;
     color: #4b1e3d;
+    align-content: center;
+}
+
+.station
+.address
+.total
+.booked
+.free {
+    display: block;
+    float: left;
 }
 
 .station {
     background: #ec8fd052;
-    width: 950px;
+    width: 80%;
     height: 100%;
     margin: auto;
     position: relative;
     padding: 10px;
 }
 
-/* .station {
-    background: whitesmoke;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    position: relative;
-    padding: 2px;
-} */
-
 .address {
     background: #4b1e3d;
-    width: 900px;
-    height: 40px;
+    width: 350px;
+    height: 50px;
     margin: auto;
-    margin-top: 5px;
     position: relative;
-    padding: 10px;
-    color: whitesmoke;
+    padding: 15px;
     font-weight: bold;
-    text-align: center;
+    text-align: center; 
+    color: wheat;
 }
 
 .total {
     background: #b82e8a;
-    width: 850px;
+    width: 350px;
     height: 50px;
     margin: auto;
-    margin-top: 15px;
     position: relative;
     padding: 10px;
     font-weight: normal;
@@ -63,10 +62,9 @@ h1 {
 
 .free {
     background: #cccc00;
-    width: 850px;
+    width: 350px;
     height: 50px;
     margin: auto;
-    margin-top: 10px;
     position: relative;
     padding: 10px;    
     font-weight: normal;
@@ -76,10 +74,9 @@ h1 {
 
 .booked {
     background: #ccc;
-    width: 850px;
+    width: 350px;
     height: 50px;
     margin: auto;
-    margin-top: 10px;
     position: relative;
     padding: 10px;    
     font-weight: normal;
@@ -97,21 +94,3 @@ h1 {
 #booked-no{
     font-style: italic;
 }
-
-/* 
-.main-station {
-    background: #ec8fd02f;
-    width: 970px;
-    height: 605px;
-    margin: auto;
-    position: relative;
-}
-
-.main-station-id{
-    background: whitesmoke;
-    width: 930px;
-    height: 200px;
-    margin: auto;
-    position: relative;
-    padding: 20px;
-} */
